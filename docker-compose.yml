@@ -6,8 +6,8 @@ services:
     ports:
       - "3000:3000"
     networks:
-      - eroxii_network
+      - alpha_network
 
 networks:
-  eroxii_network:
+  alpha_network:
     external: true
