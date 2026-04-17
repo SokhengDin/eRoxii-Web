@@ -1,0 +1,13 @@
+services:
+  eroxii-landing:
+    build: .
+    container_name: eroxii-landing
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    networks:
+      - eroxii_network
+
+networks:
+  eroxii_network:
+    external: true

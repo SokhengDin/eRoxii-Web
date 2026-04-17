@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0D1F6B;
+  --color-navy-fg: #FFFFFF;
+  --font-sans: "Space Grotesk", "Battambang", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-khmer: "Battambang", "Space Grotesk", system-ui, sans-serif;
+}
+
+:root {
+  --navy: #0D1F6B;
+}
+
+html,
+body {
+  background: #ffffff;
+  color: var(--navy);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: var(--font-sans);
+}
+
+html[lang="km"] body,
+.km-font {
+  font-family: var(--font-khmer);
+}
+
+html[lang="km"] .km-hero,
+.km-hero.km-hero {
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+::selection {
+  background: #0d1f6b;
+  color: #fff;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
